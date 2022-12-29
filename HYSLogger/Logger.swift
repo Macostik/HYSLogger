@@ -66,7 +66,7 @@ public struct Logger {
                          line: Int = #line) {
         log(message(), type: .debug, filename: filename, line: line)
     }
-    public static func warrning<T>(_ message: @autoclosure () -> T,
+    public static func warning<T>(_ message: @autoclosure () -> T,
                             filename: String = #file,
                             line: Int = #line) {
         log(message(), type: .warning, filename: filename, line: line)
